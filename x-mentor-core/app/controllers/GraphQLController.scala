@@ -1,6 +1,6 @@
 package controllers
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import play.api.libs.json._
 import play.api.mvc._
 import sangria.execution._
@@ -15,10 +15,12 @@ import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
 
 @Singleton
-class GraphQLController @Inject()()(implicit ec: ExecutionContext)
+class GraphQLController @Inject()(
+    val controllerComponents: ControllerComponents,
+    courseService: CourseService)(implicit ec: ExecutionContext)
   extends BaseController{
 
-  def graphqlBody = Action.async(parse.json) { request =>
+  def graphql = Action.async(parse.json) { request =>
     val query = (request.body \ "query").as[String]
     val operation = (request.body \ "operationName").asOpt[String]
 
@@ -39,7 +41,7 @@ class GraphQLController @Inject()()(implicit ec: ExecutionContext)
 
       // query parsed successfully, time to execute it!
       case Success(queryAst) =>
-        Executor.execute(SchemaDefinition.schema, queryAst, new CourseService,
+        Executor.execute(SchemaDefinition.schema, queryAst, courseService,
           operationName = operation,
           variables = variables getOrElse Json.obj(),
           exceptionHandler = exceptionHandler,
