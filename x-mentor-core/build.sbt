@@ -6,7 +6,6 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala, sbtdocker.Docker
 scalaVersion := "2.13.3"
 
 lazy val circeVersion = "0.12.2"
-lazy val sangriaVersion = "2.0.1"
 
 libraryDependencies ++= Seq(
   guice,
@@ -32,10 +31,6 @@ libraryDependencies ++= Seq(
   "com.redislabs" % "jredisearch" % "2.0.0",
   // JWT
   "com.pauldijou" %% "jwt-core" % "4.2.0",
-  // GraphQL
-  "org.sangria-graphql" %% "sangria" % sangriaVersion,
-  "org.sangria-graphql" %% "sangria-slowlog" % sangriaVersion,
-  "org.sangria-graphql" %% "sangria-play-json" % sangriaVersion,
   // Test
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
 )
