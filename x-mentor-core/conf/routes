@@ -25,3 +25,6 @@ GET     /notifications                         controllers.NotificationControlle
 GET     /leaderboard                           controllers.LeaderboardController.get()
 
 GET     /healthcheck                           controllers.HealthcheckController.healthcheck()
+
+# GraphQL
+POST    /graphql                               controllers.GraphQLController.graphql
