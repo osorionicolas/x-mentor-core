@@ -49,7 +49,30 @@ services:
       - KEYCLOAK_PASSWORD:admin
     ports:
       - 8880:8080
+      
+  x-neo4j:
+    image: neo4j
+    restart: always
+    volumes:
+      - ./neo4j/data:/data
+    ports:
+      - 7474:7474
+      - 7687:7687
+      
+  x-postgres:
+    image: postgres:alpine
+    restart: always
+    volumes:
+      - ./neo4j/data:/data
+    environment:
+      - POSTGRES_USER: admin
+      - POSTGRES_PASSWORD:admin
 
+  x-adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8083:8080
 volumes:
   ivy2:
     driver_opts:
