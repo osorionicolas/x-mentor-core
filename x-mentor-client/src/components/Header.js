@@ -8,7 +8,7 @@ import LoginModal from './LoginModal'
 import AddIcon from '@material-ui/icons/Add'
 import Tooltip from '@material-ui/core/Tooltip'
 import CreateCourseModal from './CreateCourseModal'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 import { API_URL } from '../environment'
 
 const useStyles = makeStyles((theme) => ({

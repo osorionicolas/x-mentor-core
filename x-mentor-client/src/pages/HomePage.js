@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Box, Button, Chip, Divider, Grid, Paper, Typography, makeStyles } from '@material-ui/core'
 import axios from 'axios'
 import { API_URL } from '../environment'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 import { useNotification } from '../hooks/notify'
 import Carousel from 'react-material-ui-carousel'
 import { useHistory } from "react-router-dom"

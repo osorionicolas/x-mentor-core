@@ -5,7 +5,7 @@ import axios from 'axios'
 import { API_URL } from '../environment'
 import { Grid, Typography } from '@material-ui/core'
 import { useNotification } from '../hooks/notify'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 import Rating from '@material-ui/lab/Rating'
 
 const styles = makeStyles(() => ({

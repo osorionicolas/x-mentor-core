@@ -4,7 +4,7 @@ import axios from 'axios'
 import { API_URL } from '../environment'
 import HelpIcon from '@material-ui/icons/Help'
 import { useNotification } from '../hooks/notify'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 
 const useStyles = makeStyles(() => ({
   title: {

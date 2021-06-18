@@ -9,7 +9,9 @@ import Rating from '@material-ui/lab/Rating'
 import CourseModal from '../components/CourseModal'
 import { API_URL } from '../environment'
 import { useNotification } from '../hooks/notify'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
+import { useQuery, gql } from "@apollo/client"
+//import { LOAD_COURSES } from "../graphQL/Queries"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -77,13 +79,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-function useQuery() {
+function useQueryParams() {
   return new URLSearchParams(useLocation().search);
 }
 
 export default function CourseListPage() {
   const classes = useStyles()
-  const query = useQuery()
+  const query = useQueryParams()
   const prevQueryParam = useRef()
   const [courses, setCourses] = useState([])
   const [page, setPage] = useState(1)
@@ -92,6 +94,15 @@ export default function CourseListPage() {
   const [currentCourse, setCurrentCourse] = useState()
   const notify = useNotification()
   const { getTokens } = useContext(AuthContext)
+
+  /*const {error, loading, data} = useQuery(LOAD_COURSES, {
+    variables: { query: query, page: page }
+  })
+
+  useEffect(() => {
+      console.log(data)
+      if(data) setCourses(data.courses)
+  }, [data])*/
 
   const handleChange = (event, value) => setPage(value)
 

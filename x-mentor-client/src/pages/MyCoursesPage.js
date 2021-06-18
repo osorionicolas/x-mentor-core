@@ -6,7 +6,7 @@ import Pagination from '@material-ui/lab/Pagination'
 import { API_URL } from '../environment'
 import { useHistory } from "react-router-dom";
 import { useNotification } from '../hooks/notify'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 
 const useStyles = makeStyles((theme) => ({
   root: {

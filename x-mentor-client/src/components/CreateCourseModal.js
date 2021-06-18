@@ -3,7 +3,7 @@ import { Button, makeStyles, TextField, Dialog, DialogActions, DialogContent, Di
 import axios from 'axios'
 import { API_URL } from '../environment'
 import { useNotification } from '../hooks/notify'
-import { AuthContext } from '../Providers/AuthProvider'
+import { AuthContext } from '../providers/AuthProvider'
 
 const useStyles = makeStyles(() => ({
     preview: {
