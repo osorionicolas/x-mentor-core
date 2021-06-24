@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "uuid": "292f76ed-737b-4392-86d7-e5df727c22da",
+    "title": "Java Mastering",
+    "description": "Eiusmod dolore eiusmod ad exercitation irure. Minim veniam id incididunt proident dolor aliquip aute amet duis consequat velit. Exercitation cillum dolore officia velit dolore est reprehenderit non ad. Labore pariatur do consequat dolore occaecat enim occaecat. Consequat dolor nostrud excepteur aute cillum excepteur elit minim laboris et adipisicing ullamco tempor aliquip. Ullamco deserunt nostrud et irure.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "preview": "https://picsum.photos/300/200?random=1",
+    "topic": "Java",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "uuid": "1674644f-79b4-493f-933d-fad5123363ca",
+    "title": "Java From Zero to Hero",
+    "description": "Veniam nostrud aute proident nostrud exercitation dolor cupidatat qui ullamco cillum exercitation qui quis. Incididunt amet reprehenderit nisi cillum aliquip laborum non. Fugiat veniam eu culpa cupidatat reprehenderit aute ut reprehenderit deserunt. Et nostrud irure cupidatat laboris sint eiusmod. Do adipisicing ea quis aute ut ut aliquip sint sunt fugiat. Minim tempor sit qui proident laborum ea id cillum id commodo duis.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=2",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "uuid": "df690097-5e0f-4f92-8b50-11223ab215c9",
+    "title": "Java Quickstart",
+    "description": "Elit elit exercitation deserunt eu. Labore laboris incididunt aliquip qui incididunt sint ullamco sunt culpa quis. Ut ad qui veniam enim eu mollit dolore. Elit cillum ullamco incididunt laboris sit consectetur ipsum quis qui commodo. Culpa consequat laborum nulla pariatur nostrud cupidatat ad. Velit sit commodo qui consectetur amet ut. Fugiat elit est dolor voluptate proident et.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=3",
+    "rating": 0
+  },
+  {
+    "id": 4,
+    "uuid": "687cd8ea-e750-405e-bc25-66ba774a5ed9",
+    "title": "Java For Dummies",
+    "description": "Culpa proident officia duis veniam proident laboris cupidatat. Elit labore proident qui laboris eu esse pariatur anim Lorem qui cupidatat. Ipsum consectetur culpa nostrud ea incididunt sunt et tempor eiusmod velit irure aliquip culpa. Laboris et id eiusmod nostrud laborum elit consequat elit aute elit laboris. Amet voluptate dolore dolor consequat ex incididunt qui nisi.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=4",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "uuid": "30e965b0-f34a-42cb-833e-fd43afba598b",
+    "title": "Javascript Mastering",
+    "description": "Occaecat laboris officia occaecat tempor deserunt aliquip cupidatat qui. Fugiat consequat aliqua proident irure. Do aliqua ullamco dolore ad commodo id ut occaecat. Laboris proident velit officia sit ullamco quis cupidatat sit. Consequat deserunt ipsum cupidatat exercitation. Minim exercitation sunt dolore anim non esse labore ut.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Javascript",
+    "preview": "https://picsum.photos/300/200?random=5",
+    "rating": 3
+  },
+  {
+    "id": 6,
+    "uuid": "2dc693c9-f6fb-45aa-9975-62930fca893f",
+    "title": "Javascript From Zero to Hero",
+    "description": "Sint aute amet excepteur proident elit esse nisi officia. Minim mollit eu non est laborum. Deserunt nisi voluptate eiusmod irure Lorem sunt quis fugiat.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Javascript",
+    "preview": "https://picsum.photos/300/200?random=6",
+    "rating": 2
+  },
+  {
+    "id": 7,
+    "uuid": "a1df2656-9a43-4ad9-a2b3-806be809f510",
+    "title": "Javascript Quickstart",
+    "description": "Est et ut eu elit incididunt irure irure dolor reprehenderit elit exercitation. Dolor sint reprehenderit sunt quis consectetur irure nulla laboris amet esse sit consectetur. Voluptate veniam et dolor minim pariatur cillum duis esse fugiat nulla. Deserunt non incididunt pariatur tempor commodo magna pariatur incididunt voluptate qui.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Javascript",
+    "preview": "https://picsum.photos/300/200?random=7",
+    "rating": 0
+  },
+  {
+    "id": 8,
+    "uuid": "bca0601d-a8da-49a0-bf70-a1efdfd2ee2f",
+    "title": "Javascript For Dummies",
+    "description": "Ut voluptate sint sit occaecat in cillum. Magna ex pariatur labore cillum culpa est do sint irure in dolor elit. Occaecat amet amet commodo adipisicing qui. Reprehenderit sint cillum non anim nisi id pariatur proident anim fugiat occaecat. Nulla dolore ex quis occaecat nostrud qui cillum nisi. Velit cillum excepteur aute culpa consectetur. Tempor et laboris eu commodo sunt ipsum nulla ea pariatur laborum irure sit elit eiusmod.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "preview": "https://picsum.photos/300/200?random=8",
+    "topic": "Javascript",
+    "rating": 3
+  },
+  {
+    "id": 9,
+    "uuid": "df295143-91a6-48da-ad65-a67faa8ca238",
+    "title": "HTML CSS and Javascript",
+    "description": "Nulla commodo irure labore excepteur proident nulla elit. Id commodo reprehenderit dolore tempor. Nulla eiusmod aliquip deserunt sunt ut id dolor ad labore magna ad. Nostrud esse in incididunt reprehenderit ullamco ex veniam do elit non pariatur qui nisi irure. Et deserunt labore aliqua Lorem est ut labore exercitation sint.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Web",
+    "preview": "https://picsum.photos/300/200?random=9",
+    "rating": 5
+  },
+  {
+    "id": 10,
+    "uuid": "674c43a0-2def-48ce-ae93-2f64e28bd169",
+    "title": "Web Design from Zero to Hero",
+    "description": "Cillum sunt dolore magna dolor non mollit in excepteur laboris nisi aliquip irure labore. Mollit occaecat sint dolor anim nisi. Lorem dolore nostrud officia duis sint voluptate nulla eu labore. Consectetur cillum ipsum amet deserunt. Est aliqua velit cupidatat amet deserunt consequat quis tempor anim aliquip non et velit.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Web",
+    "preview": "https://picsum.photos/300/200?random=10",
+    "rating": 0
+  },
+  {
+    "id": 11,
+    "uuid": "909f161b-25c7-4947-a73a-6f12e6b5e0ad",
+    "title": "Modern Economy",
+    "description": "Pariatur quis aliquip excepteur consequat adipisicing fugiat esse proident labore labore irure culpa exercitation eiusmod. Nisi officia dolore qui occaecat irure commodo dolor qui labore. Nisi sunt aute ut dolore tempor eiusmod nisi consectetur labore ea exercitation elit aliquip incididunt. Amet amet tempor est anim excepteur anim velit veniam Lorem. Duis duis ex consectetur reprehenderit. Do culpa commodo laborum aliquip labore non.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Economy",
+    "preview": "https://picsum.photos/300/200?random=11",
+    "rating": 5
+  },
+  {
+    "id": 12,
+    "uuid": "e9987052-dac1-493e-a9ad-0ce8846ad6a2",
+    "title": "Basic Economy",
+    "description": "Eiusmod laboris nisi ipsum officia. Laborum nostrud non ullamco deserunt eu commodo aute. Nulla amet pariatur adipisicing laboris occaecat fugiat aliquip commodo irure quis. Quis fugiat cupidatat et est ullamco cupidatat consequat et.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Economy",
+    "preview": "https://picsum.photos/300/200?random=12",
+    "rating": 2
+  },
+  {
+    "id": 13,
+    "uuid": "6aad8a73-49e1-41b9-8349-7deba3c1a47e",
+    "title": "Redis Mastering",
+    "description": "Sint culpa commodo ullamco exercitation nostrud incididunt enim eiusmod excepteur sit consectetur cillum. Adipisicing et aliquip fugiat est anim mollit excepteur magna culpa aliqua Lorem labore. Aute in eu adipisicing laboris duis magna qui cupidatat veniam ad culpa consequat. Quis qui non sit enim magna dolor id nulla velit velit. Incididunt ipsum est Lorem ut. Et consectetur duis laboris dolor in proident cillum consequat ullamco nisi voluptate.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Redis",
+    "preview": "https://picsum.photos/300/200?random=13",
+    "rating": 5
+  },
+  {
+    "id": 14,
+    "uuid": "3c7e4c16-5fb1-40ae-b5d6-bf2886189452",
+    "title": "Redis From Zero to Hero",
+    "description": "Ullamco amet aliqua laborum ad nulla quis. Occaecat amet sint ipsum aute excepteur incididunt ullamco cupidatat esse deserunt laboris. Magna esse mollit in est reprehenderit sint dolore nisi laborum duis. Commodo id dolore laboris officia voluptate proident cillum nulla aliquip. Ex est cupidatat culpa culpa pariatur aute adipisicing aliquip voluptate amet tempor proident anim.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Redis",
+    "preview": "https://picsum.photos/300/200?random=14",
+    "rating": 4
+  },
+  {
+    "id": 15,
+    "uuid": "b797ce70-d886-4cbc-b7fb-d3e7dba81eed",
+    "title": "Redis Quickstart",
+    "description": "Reprehenderit aliqua ullamco ipsum laborum veniam non eu cupidatat anim eiusmod. Laborum eiusmod culpa voluptate labore consectetur. Consequat duis dolor veniam officia tempor laborum duis proident excepteur ea ullamco id. Minim nisi culpa esse pariatur dolore est ex ipsum exercitation. Minim enim culpa cupidatat velit labore quis nostrud dolore cupidatat. Cupidatat eiusmod proident laborum qui eu occaecat sunt esse cillum mollit. Esse laborum exercitation cupidatat nulla nostrud anim officia id incididunt sit.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Redis",
+    "preview": "https://picsum.photos/300/200?random=15",
+    "rating": 4
+  },
+  {
+    "id": 16,
+    "uuid": "81083995-e09c-4e20-beaf-74472a6153a9",
+    "title": "Redis For Dummies",
+    "description": "Laboris officia non officia et ad velit esse. Voluptate consequat consectetur veniam ullamco aute quis est minim aute veniam adipisicing ipsum id. Reprehenderit do tempor ullamco eu in voluptate. Labore dolor consequat magna amet elit adipisicing labore ut voluptate aliquip. Laborum amet officia laborum ea officia laboris ipsum ad exercitation culpa.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Redis",
+    "preview": "https://picsum.photos/300/200?random=16",
+    "rating": 4
+  },
+  {
+    "id": 17,
+    "uuid": "62e41087-c988-4877-b616-d3c4e7e2a7c6",
+    "title": "Art Modern",
+    "description": "Veniam ullamco id proident commodo ad consequat consequat aliqua est in ad labore quis reprehenderit. Esse ipsum deserunt do velit. Ex dolore anim incididunt voluptate ad mollit aliqua Lorem in occaecat proident.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Art",
+    "preview": "https://picsum.photos/300/200?random=17",
+    "rating": 0
+  },
+  {
+    "id": 18,
+    "uuid": "22102651-bc75-414c-b9e7-94534daa2f06",
+    "title": "Art Mediterranean",
+    "description": "Exercitation anim aute ad anim magna officia nisi. Et mollit dolor sint dolore laborum ad id tempor duis veniam reprehenderit. Ex ut labore labore deserunt occaecat labore cillum dolore ut tempor dolore cillum nostrud in. Eiusmod ipsum nulla aliqua ea. Eu consequat laboris nisi mollit laboris non ipsum ad qui laboris culpa aliqua. Officia duis id aute sit amet ipsum laboris.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Art",
+    "preview": "https://picsum.photos/300/200?random=18",
+    "rating": 1
+  },
+  {
+    "id": 19,
+    "uuid": "506f7348-2281-4d2a-8547-4db3d00c976b",
+    "title": "Art Contemporanean and others",
+    "description": "Eiusmod ad reprehenderit sunt occaecat fugiat nostrud nulla consequat amet. Ex magna elit eu consectetur incididunt exercitation. Tempor enim consequat aute in velit fugiat elit. Commodo velit sit cupidatat proident irure qui.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Art",
+    "preview": "https://picsum.photos/300/200?random=19",
+    "rating": 1
+  },
+  {
+    "id": 20,
+    "uuid": "2e08b773-5ee3-42f2-a00b-6b350f77b5c5",
+    "title": "Spring Mastering",
+    "description": "Eiusmod ad reprehenderit sunt occaecat fugiat nostrud nulla consequat amet. Ex magna elit eu consectetur incididunt exercitation. Tempor enim consequat aute in velit fugiat elit. Commodo velit sit cupidatat proident irure qui.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=19",
+    "rating": 5
+  },
+  {
+    "id": 21,
+    "uuid": "555e5582-5ce5-464f-a1f4-5d64edc89e1a",
+    "title": "Backend Ninja with Spring Framework",
+    "description": "Eiusmod dolore eiusmod ad exercitation irure. Minim veniam id incididunt proident dolor aliquip aute amet duis consequat velit. Exercitation cillum dolore officia velit dolore est reprehenderit non ad. Labore pariatur do consequat dolore occaecat enim occaecat. Consequat dolor nostrud excepteur aute cillum excepteur elit minim laboris et adipisicing ullamco tempor aliquip. Ullamco deserunt nostrud et irure.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "preview": "https://picsum.photos/300/200?random=1",
+    "topic": "Spring",
+    "rating": 5
+  },
+  {
+    "id": 22,
+    "uuid": "2c6df1c4-3254-4ab7-9641-d7a0338d2ef9",
+    "title": "From Zero to Spring Rockstar",
+    "description": "Veniam nostrud aute proident nostrud exercitation dolor cupidatat qui ullamco cillum exercitation qui quis. Incididunt amet reprehenderit nisi cillum aliquip laborum non. Fugiat veniam eu culpa cupidatat reprehenderit aute ut reprehenderit deserunt. Et nostrud irure cupidatat laboris sint eiusmod. Do adipisicing ea quis aute ut ut aliquip sint sunt fugiat. Minim tempor sit qui proident laborum ea id cillum id commodo duis.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=2",
+    "rating": 4
+  },
+  {
+    "id": 23,
+    "uuid": "a395b31a-c12f-42e4-8189-2a70d59f2550",
+    "title": "Spring Boot Quickstart",
+    "description": "Elit elit exercitation deserunt eu. Labore laboris incididunt aliquip qui incididunt sint ullamco sunt culpa quis. Ut ad qui veniam enim eu mollit dolore. Elit cillum ullamco incididunt laboris sit consectetur ipsum quis qui commodo. Culpa consequat laborum nulla pariatur nostrud cupidatat ad. Velit sit commodo qui consectetur amet ut. Fugiat elit est dolor voluptate proident et.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=3",
+    "rating": 0
+  },
+  {
+    "id": 24,
+    "uuid": "c93767cf-c965-4656-9617-4bd04d10c2c5",
+    "title": "Spring Boot Advanced",
+    "description": "Culpa proident officia duis veniam proident laboris cupidatat. Elit labore proident qui laboris eu esse pariatur anim Lorem qui cupidatat. Ipsum consectetur culpa nostrud ea incididunt sunt et tempor eiusmod velit irure aliquip culpa. Laboris et id eiusmod nostrud laborum elit consequat elit aute elit laboris. Amet voluptate dolore dolor consequat ex incididunt qui nisi.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=4",
+    "rating": 5
+  },
+  {
+    "id": 25,
+    "uuid": "8db48ff4-f3c0-4f03-9718-925b95ead3e8",
+    "title": "Build a modern REST API with Spring Boot",
+    "description": "Occaecat laboris officia occaecat tempor deserunt aliquip cupidatat qui. Fugiat consequat aliqua proident irure. Do aliqua ullamco dolore ad commodo id ut occaecat. Laboris proident velit officia sit ullamco quis cupidatat sit. Consequat deserunt ipsum cupidatat exercitation. Minim exercitation sunt dolore anim non esse labore ut.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=5",
+    "rating": 3
+  },
+  {
+    "id": 26,
+    "uuid": "adebfe6f-f514-4c01-b4b2-a4aa109b8998",
+    "title": "Learn Webflux and Reactive programming in Spring",
+    "description": "Sint aute amet excepteur proident elit esse nisi officia. Minim mollit eu non est laborum. Deserunt nisi voluptate eiusmod irure Lorem sunt quis fugiat.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=6",
+    "rating": 2
+  },
+  {
+    "id": 27,
+    "uuid": "87d58185-dbb8-4705-b58b-892fe6f3c6ef",
+    "title": "Java Memory Model",
+    "description": "Est et ut eu elit incididunt irure irure dolor reprehenderit elit exercitation. Dolor sint reprehenderit sunt quis consectetur irure nulla laboris amet esse sit consectetur. Voluptate veniam et dolor minim pariatur cillum duis esse fugiat nulla. Deserunt non incididunt pariatur tempor commodo magna pariatur incididunt voluptate qui.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=7",
+    "rating": 0
+  },
+  {
+    "id": 28,
+    "uuid": "0cdc8722-8107-41c4-84bf-79bed5c5c0e7",
+    "title": "Modern Javascript",
+    "description": "Ut voluptate sint sit occaecat in cillum. Magna ex pariatur labore cillum culpa est do sint irure in dolor elit. Occaecat amet amet commodo adipisicing qui. Reprehenderit sint cillum non anim nisi id pariatur proident anim fugiat occaecat. Nulla dolore ex quis occaecat nostrud qui cillum nisi. Velit cillum excepteur aute culpa consectetur. Tempor et laboris eu commodo sunt ipsum nulla ea pariatur laborum irure sit elit eiusmod.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "preview": "https://picsum.photos/300/200?random=8",
+    "topic": "Javascript",
+    "rating": 3
+  },
+  {
+    "id": 29,
+    "uuid": "a11bc04c-0f27-4c5c-898c-d7a2e6296782",
+    "title": "Mastering the Web",
+    "description": "Nulla commodo irure labore excepteur proident nulla elit. Id commodo reprehenderit dolore tempor. Nulla eiusmod aliquip deserunt sunt ut id dolor ad labore magna ad. Nostrud esse in incididunt reprehenderit ullamco ex veniam do elit non pariatur qui nisi irure. Et deserunt labore aliqua Lorem est ut labore exercitation sint.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Web",
+    "preview": "https://picsum.photos/300/200?random=9",
+    "rating": 5
+  },
+  {
+    "id": 30,
+    "uuid": "5a592bc2-5047-4548-937f-c72929a9673c",
+    "title": "Blockchain for Dummies",
+    "description": "Cillum sunt dolore magna dolor non mollit in excepteur laboris nisi aliquip irure labore. Mollit occaecat sint dolor anim nisi. Lorem dolore nostrud officia duis sint voluptate nulla eu labore. Consectetur cillum ipsum amet deserunt. Est aliqua velit cupidatat amet deserunt consequat quis tempor anim aliquip non et velit.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=10",
+    "rating": 0
+  },
+  {
+    "id": 31,
+    "uuid": "9c0edddc-8656-4911-b5b4-abbffd926300",
+    "title": "Blockchain for the brave",
+    "description": "Pariatur quis aliquip excepteur consequat adipisicing fugiat esse proident labore labore irure culpa exercitation eiusmod. Nisi officia dolore qui occaecat irure commodo dolor qui labore. Nisi sunt aute ut dolore tempor eiusmod nisi consectetur labore ea exercitation elit aliquip incididunt. Amet amet tempor est anim excepteur anim velit veniam Lorem. Duis duis ex consectetur reprehenderit. Do culpa commodo laborum aliquip labore non.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=11",
+    "rating": 5
+  },
+  {
+    "id": 32,
+    "uuid": "3ca6b85c-1999-4d1a-9a82-81fa3f835c7f",
+    "title": "Blockchain again",
+    "description": "Eiusmod laboris nisi ipsum officia. Laborum nostrud non ullamco deserunt eu commodo aute. Nulla amet pariatur adipisicing laboris occaecat fugiat aliquip commodo irure quis. Quis fugiat cupidatat et est ullamco cupidatat consequat et.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=12",
+    "rating": 2
+  },
+  {
+    "id": 33,
+    "uuid": "e464bc48-0248-417e-9be7-f6f0972246a7",
+    "title": "Blockchain behind the scenes",
+    "description": "Sint culpa commodo ullamco exercitation nostrud incididunt enim eiusmod excepteur sit consectetur cillum. Adipisicing et aliquip fugiat est anim mollit excepteur magna culpa aliqua Lorem labore. Aute in eu adipisicing laboris duis magna qui cupidatat veniam ad culpa consequat. Quis qui non sit enim magna dolor id nulla velit velit. Incididunt ipsum est Lorem ut. Et consectetur duis laboris dolor in proident cillum consequat ullamco nisi voluptate.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=13",
+    "rating": 5
+  },
+  {
+    "id": 34,
+    "uuid": "4d63a429-629e-4996-b707-c05ffb91cc95",
+    "title": "Blockchain Advanced",
+    "description": "Ullamco amet aliqua laborum ad nulla quis. Occaecat amet sint ipsum aute excepteur incididunt ullamco cupidatat esse deserunt laboris. Magna esse mollit in est reprehenderit sint dolore nisi laborum duis. Commodo id dolore laboris officia voluptate proident cillum nulla aliquip. Ex est cupidatat culpa culpa pariatur aute adipisicing aliquip voluptate amet tempor proident anim.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=14",
+    "rating": 4
+  },
+  {
+    "id": 35,
+    "uuid": "e0e79999-8321-4621-b653-3364e9789e3a",
+    "title": "Blockchain Quickstart",
+    "description": "Reprehenderit aliqua ullamco ipsum laborum veniam non eu cupidatat anim eiusmod. Laborum eiusmod culpa voluptate labore consectetur. Consequat duis dolor veniam officia tempor laborum duis proident excepteur ea ullamco id. Minim nisi culpa esse pariatur dolore est ex ipsum exercitation. Minim enim culpa cupidatat velit labore quis nostrud dolore cupidatat. Cupidatat eiusmod proident laborum qui eu occaecat sunt esse cillum mollit. Esse laborum exercitation cupidatat nulla nostrud anim officia id incididunt sit.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Blockchain",
+    "preview": "https://picsum.photos/300/200?random=15",
+    "rating": 4
+  },
+  {
+    "id": 36,
+    "uuid": "afe47634-f95a-4e40-bd0e-322f42c456c6",
+    "title": "Javascript Wizard crash course",
+    "description": "Laboris officia non officia et ad velit esse. Voluptate consequat consectetur veniam ullamco aute quis est minim aute veniam adipisicing ipsum id. Reprehenderit do tempor ullamco eu in voluptate. Labore dolor consequat magna amet elit adipisicing labore ut voluptate aliquip. Laborum amet officia laborum ea officia laboris ipsum ad exercitation culpa.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Javascript",
+    "preview": "https://picsum.photos/300/200?random=16",
+    "rating": 4
+  },
+  {
+    "id": 37,
+    "uuid": "f0e61510-7c28-44cb-b903-1790b5a660d9",
+    "title": "Javascript 2021",
+    "description": "Veniam ullamco id proident commodo ad consequat consequat aliqua est in ad labore quis reprehenderit. Esse ipsum deserunt do velit. Ex dolore anim incididunt voluptate ad mollit aliqua Lorem in occaecat proident.",
+    "content": "https://www.youtube.com/embed/WZIClGn746I",
+    "topic": "Javascript",
+    "preview": "https://picsum.photos/300/200?random=17",
+    "rating": 0
+  },
+  {
+    "id": 38,
+    "uuid": "48c04842-3ed7-457c-ac1c-0c31d8820942",
+    "title": "Effective Java Developer",
+    "description": "Exercitation anim aute ad anim magna officia nisi. Et mollit dolor sint dolore laborum ad id tempor duis veniam reprehenderit. Ex ut labore labore deserunt occaecat labore cillum dolore ut tempor dolore cillum nostrud in. Eiusmod ipsum nulla aliqua ea. Eu consequat laboris nisi mollit laboris non ipsum ad qui laboris culpa aliqua. Officia duis id aute sit amet ipsum laboris.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=18",
+    "rating": 1
+  },
+  {
+    "id": 39,
+    "uuid": "9ecfb4d0-9d52-488b-ae8b-cc4325a9d5fe",
+    "title": "Java Architect",
+    "description": "Eiusmod ad reprehenderit sunt occaecat fugiat nostrud nulla consequat amet. Ex magna elit eu consectetur incididunt exercitation. Tempor enim consequat aute in velit fugiat elit. Commodo velit sit cupidatat proident irure qui.",
+    "content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+    "topic": "Java",
+    "preview": "https://picsum.photos/300/200?random=19",
+    "rating": 1
+  },
+  {
+    "id": 40,
+    "uuid": "c6579b07-3cf1-46d1-8e9d-d26c10ebabc1",
+    "title": "From Zero to Spring Viking",
+    "description": "Eiusmod ad reprehenderit sunt occaecat fugiat nostrud nulla consequat amet. Ex magna elit eu consectetur incididunt exercitation. Tempor enim consequat aute in velit fugiat elit. Commodo velit sit cupidatat proident irure qui.",
+    "content": "https://www.youtube.com/embed/ivoaMszi2yM",
+    "topic": "Spring",
+    "preview": "https://picsum.photos/300/200?random=19",
+    "rating": 5
+  }
+]
