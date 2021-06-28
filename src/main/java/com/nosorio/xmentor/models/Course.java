@@ -1,7 +1,5 @@
 package com.nosorio.xmentor.models;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.nosorio.xmentor.models.converters.TopicConverter;
 import lombok.Data;

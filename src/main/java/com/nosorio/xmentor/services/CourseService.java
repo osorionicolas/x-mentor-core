@@ -23,7 +23,7 @@ public class CourseService {
     private final CourseRepository courseRepository;
     private final RabbitTemplate rabbitTemplate;
 
-    @Value("${rabbitmq.topic}")
+    @Value("${rabbitmq.exchange}")
     private String topicExchangeName;
 
     public Course createCourse(Course course){
