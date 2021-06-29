@@ -18,4 +18,5 @@ public class TopicController {
     public List<Topic> getAll(){
         return topicService.getAll();
     }
+
 }

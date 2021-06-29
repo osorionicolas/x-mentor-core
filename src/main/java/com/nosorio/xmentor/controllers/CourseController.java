@@ -29,9 +29,8 @@ public class CourseController {
     }
 
     @PostMapping({"", "/"})
-    public ResponseEntity<Void> create(@RequestBody Course course) {
-        courseService.createCourse(course);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+    public ResponseEntity<Course> create(@RequestBody Course course) {
+        return new ResponseEntity<>( courseService.createCourse(course), HttpStatus.CREATED);
     }
 
     @PostMapping("/{id}/enroll")

@@ -25,6 +25,7 @@ public class AuthService {
     private final AuthConfiguration authConfiguration;
 
     public Tokens login(User user) {
+        log.info("Trying to login with user: {}", user.getEmail());
         TokenRequest request =
                 new TokenRequest(
                         this.authConfiguration.getTokenUrl(),
@@ -34,13 +35,14 @@ public class AuthService {
                 );
         try {
             TokenResponse tokenResponse = OIDCTokenResponseParser.parse(request.toHTTPRequest().send());
-            if (! tokenResponse.indicatesSuccess()) {
-                // We got an error response...
+            if (!tokenResponse.indicatesSuccess()) {
+                log.info("Login fail for user: {}", user.getEmail());
                 TokenErrorResponse errorResponse = tokenResponse.toErrorResponse();
                 log.info(errorResponse.toHTTPResponse().toString());
                 throw new ResponseStatusException(HttpStatus.valueOf(errorResponse.toHTTPResponse().getStatusCode()), errorResponse.toHTTPResponse().toString());
             }
             else {
+                log.info("Login succesful for user: {}", user.getEmail());
                 return tokenResponse.toSuccessResponse().getTokens();
             }
         } catch(IOException | ParseException e){
