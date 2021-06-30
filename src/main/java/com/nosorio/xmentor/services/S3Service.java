@@ -3,7 +3,6 @@ package com.nosorio.xmentor.services;
 import com.amazonaws.HttpMethod;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest;
 import com.nosorio.xmentor.models.S3File;
 import com.nosorio.xmentor.repositories.S3FileRepository;
 import lombok.RequiredArgsConstructor;
@@ -43,10 +42,10 @@ public class S3Service {
     }
 
     public String findByName(String filename) {
-        Optional<S3File> file = s3FileRepository.findByFilename(filename);
-        String uuid = file.get().getUuid();
+        Optional<S3File> oFile = s3FileRepository.findByFilename(filename);
+        String uuid = oFile.map(S3File::getUuid).orElse("");
         if (!s3Client.doesObjectExist(s3BucketName, uuid))
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find file");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find file " + filename);
         log.info("Generating GET signed URL for file name {}", uuid);
         return generateUrl(uuid, HttpMethod.GET);
     }

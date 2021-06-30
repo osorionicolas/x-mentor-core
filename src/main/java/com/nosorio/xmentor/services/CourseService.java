@@ -1,5 +1,6 @@
 package com.nosorio.xmentor.services;
 
+import com.nosorio.xmentor.Constants;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.repositories.CourseRepository;
 import lombok.RequiredArgsConstructor;
@@ -36,11 +37,11 @@ public class CourseService {
     }
 
     public List<Course> getCoursesByQuery(String query, int page){
-        Pageable pageable = PageRequest.of(page, 6);
+        Pageable pageable = PageRequest.of(page, Constants.ITEMS_PER_PAGE);
         return courseRepository.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(query, query, pageable);
     }
 
-    public void getCoursesByStudent(String student, int page){
+    public void getCoursesByUser(String username, int page){
 
     }
 

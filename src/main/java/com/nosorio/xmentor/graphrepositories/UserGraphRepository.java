@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserGraphRepository extends Neo4jRepository<User, String> {
-
 }

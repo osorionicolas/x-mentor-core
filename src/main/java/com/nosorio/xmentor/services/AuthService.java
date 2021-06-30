@@ -25,24 +25,24 @@ public class AuthService {
     private final AuthConfiguration authConfiguration;
 
     public Tokens login(User user) {
-        log.info("Trying to login with user: {}", user.getEmail());
+        log.info("Trying to login with user: {}", user.getUsername());
         TokenRequest request =
                 new TokenRequest(
                         this.authConfiguration.getTokenUrl(),
                         new ClientSecretBasic(this.authConfiguration.getClientId(), this.authConfiguration.getClientSecret()),
-                        new ResourceOwnerPasswordCredentialsGrant(user.getEmail(), new Secret(user.getPassword())),
+                        new ResourceOwnerPasswordCredentialsGrant(user.getUsername(), new Secret(user.getPassword())),
                         new Scope("openid")
                 );
         try {
             TokenResponse tokenResponse = OIDCTokenResponseParser.parse(request.toHTTPRequest().send());
             if (!tokenResponse.indicatesSuccess()) {
-                log.info("Login fail for user: {}", user.getEmail());
+                log.info("Login fail for user: {}", user.getUsername());
                 TokenErrorResponse errorResponse = tokenResponse.toErrorResponse();
                 log.info(errorResponse.toHTTPResponse().toString());
                 throw new ResponseStatusException(HttpStatus.valueOf(errorResponse.toHTTPResponse().getStatusCode()), errorResponse.toHTTPResponse().toString());
             }
             else {
-                log.info("Login succesful for user: {}", user.getEmail());
+                log.info("Login succesful for user: {}", user.getUsername());
                 return tokenResponse.toSuccessResponse().getTokens();
             }
         } catch(IOException | ParseException e){

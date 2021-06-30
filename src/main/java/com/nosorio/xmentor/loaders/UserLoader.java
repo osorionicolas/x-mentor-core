@@ -1,7 +1,7 @@
 package com.nosorio.xmentor.loaders;
 
-import com.fasterxml.jackson.databind.MappingIterator;
-import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nosorio.xmentor.graphrepositories.UserGraphRepository;
 import com.nosorio.xmentor.models.User;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +10,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.util.List;
 
 @Slf4j
 @Component
@@ -20,11 +21,11 @@ public class UserLoader {
 
     public void loadUsers() throws IOException {
         log.info("Loading users ...");
-        ClassPathResource coursesFile = new ClassPathResource("data/students.csv");
+        ClassPathResource usersFile = new ClassPathResource("data/users.json");
 
-        if (coursesFile.exists()) {
-            MappingIterator<User> users = new CsvMapper().readerWithTypedSchemaFor(User.class).readValues(coursesFile.getInputStream());
-            userGraphRepository.saveAll(users.readAll());
+        if (usersFile.exists()) {
+            List<User> users = new ObjectMapper().readValue(usersFile.getInputStream(), new TypeReference<List<User>>(){});
+            userGraphRepository.saveAll(users);
         }
     }
 }

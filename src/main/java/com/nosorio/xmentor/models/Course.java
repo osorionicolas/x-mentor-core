@@ -37,4 +37,5 @@ public class Course {
     private Topic topic;
 
     private int rating;
+
 }

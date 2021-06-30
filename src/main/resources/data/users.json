@@ -1,0 +1,330 @@
+[
+	{
+		"username": "mamie.toy@gmail.com",
+		"password": "mamie.toy",
+		"interests": ["Economy", "Javascript", "Web"],
+		"courses": [
+			{
+				"id": 1,
+				"uuid": "292f76ed-737b-4392-86d7-e5df727c22da",
+				"title": "Java Mastering",
+				"description": "Eiusmod dolore eiusmod ad exercitation irure. Minim veniam id incididunt proident dolor aliquip aute amet duis consequat velit. Exercitation cillum dolore officia velit dolore est reprehenderit non ad. Labore pariatur do consequat dolore occaecat enim occaecat. Consequat dolor nostrud excepteur aute cillum excepteur elit minim laboris et adipisicing ullamco tempor aliquip. Ullamco deserunt nostrud et irure.",
+				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"preview": "https://picsum.photos/300/200?random=1",
+				"topic": "Java",
+				"rating": 5
+			},
+			{
+				"id": 5,
+				"uuid": "30e965b0-f34a-42cb-833e-fd43afba598b",
+				"title": "Javascript Mastering",
+				"description": "Occaecat laboris officia occaecat tempor deserunt aliquip cupidatat qui. Fugiat consequat aliqua proident irure. Do aliqua ullamco dolore ad commodo id ut occaecat. Laboris proident velit officia sit ullamco quis cupidatat sit. Consequat deserunt ipsum cupidatat exercitation. Minim exercitation sunt dolore anim non esse labore ut.",
+				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"topic": "Javascript",
+				"preview": "https://picsum.photos/300/200?random=5",
+				"rating": 3
+			},
+			{
+				"id": 8,
+				"uuid": "bca0601d-a8da-49a0-bf70-a1efdfd2ee2f",
+				"title": "Javascript For Dummies",
+				"description": "Ut voluptate sint sit occaecat in cillum. Magna ex pariatur labore cillum culpa est do sint irure in dolor elit. Occaecat amet amet commodo adipisicing qui. Reprehenderit sint cillum non anim nisi id pariatur proident anim fugiat occaecat. Nulla dolore ex quis occaecat nostrud qui cillum nisi. Velit cillum excepteur aute culpa consectetur. Tempor et laboris eu commodo sunt ipsum nulla ea pariatur laborum irure sit elit eiusmod.",
+				"content": "https://www.youtube.com/embed/WZIClGn746I",
+				"preview": "https://picsum.photos/300/200?random=8",
+				"topic": "Javascript",
+				"rating": 3
+			}
+		] 
+	},
+	{
+		"username": "timmy.rippin@gmail.com",
+		"password": "timmy.rippin",
+		"interests": [],
+		"courses": [
+			{
+				"id": 2,
+				"uuid": "1674644f-79b4-493f-933d-fad5123363ca",
+				"title": "Java From Zero to Hero",
+				"description": "Veniam nostrud aute proident nostrud exercitation dolor cupidatat qui ullamco cillum exercitation qui quis. Incididunt amet reprehenderit nisi cillum aliquip laborum non. Fugiat veniam eu culpa cupidatat reprehenderit aute ut reprehenderit deserunt. Et nostrud irure cupidatat laboris sint eiusmod. Do adipisicing ea quis aute ut ut aliquip sint sunt fugiat. Minim tempor sit qui proident laborum ea id cillum id commodo duis.",
+				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"topic": "Java",
+				"preview": "https://picsum.photos/300/200?random=2",
+				"rating": 4
+			}
+		] 
+	},
+	{
+		"username": "sung.luettgen@gmail.com",
+		"password": "sung.luettgen",
+		"interests": [],
+		"courses": [
+			{
+				"id": 3,
+				"uuid": "df690097-5e0f-4f92-8b50-11223ab215c9",
+				"title": "Java Quickstart",
+				"description": "Elit elit exercitation deserunt eu. Labore laboris incididunt aliquip qui incididunt sint ullamco sunt culpa quis. Ut ad qui veniam enim eu mollit dolore. Elit cillum ullamco incididunt laboris sit consectetur ipsum quis qui commodo. Culpa consequat laborum nulla pariatur nostrud cupidatat ad. Velit sit commodo qui consectetur amet ut. Fugiat elit est dolor voluptate proident et.",
+				"content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+				"topic": "Java",
+				"preview": "https://picsum.photos/300/200?random=3",
+				"rating": 0
+			}
+		] 
+	},
+	{
+		"username": "katie.howell@gmail.com",
+		"password": "katie.howell",
+		"interests": ["Redis", "Economy", "Web"],
+		"courses": [
+			{
+				"id": 4,
+				"uuid": "687cd8ea-e750-405e-bc25-66ba774a5ed9",
+				"title": "Java For Dummies",
+				"description": "Culpa proident officia duis veniam proident laboris cupidatat. Elit labore proident qui laboris eu esse pariatur anim Lorem qui cupidatat. Ipsum consectetur culpa nostrud ea incididunt sunt et tempor eiusmod velit irure aliquip culpa. Laboris et id eiusmod nostrud laborum elit consequat elit aute elit laboris. Amet voluptate dolore dolor consequat ex incididunt qui nisi.",
+				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"topic": "Java",
+				"preview": "https://picsum.photos/300/200?random=4",
+				"rating": 5
+			}
+		] 
+	},
+	{
+		"username": "mireille.pouros@gmail.com",
+		"password": "mireille.pouros",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "donn.larkin@gmail.com",
+		"password": "donn.larkin",
+		"interests": ["Redis"],
+		"courses": [] 
+	},
+	{
+		"username": "isabell.klocko@gmail.com",
+		"password": "",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "isabell.klocko",
+		"password": "",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "ellyn.walter@gmail.com",
+		"password": "ellyn.walter",
+		"interests": ["Art"],
+		"courses": [] 
+	},
+	{
+		"username": "kathern.schimmel@gmail.com",
+		"password": "kathern.schimmel",
+		"interests": ["Art", "Java", "Redis"],
+		"courses": [] 
+	},
+	{
+		"username": "benito.rice@gmail.com",
+		"password": "benito.rice",
+		"interests": ["Javascript", "Web"],
+		"courses": [] 
+	},
+	{
+		"username": "erin.jones@gmail.com",
+		"password": "erin.jones",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "daren.metz@gmail.com",
+		"password": "daren.metz",
+		"interests": ["Web"],
+		"courses": [] 
+	},
+	{
+		"username": "avery.schowalter@gmail.com",
+		"password": "avery.schowalter",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "phil.jakubowski@gmail.com",
+		"password": "phil.jakubowski",
+		"interests": ["Economy"],
+		"courses": [] 
+	},
+	{
+		"username": "laurene.wuckert@gmail.com",
+		"password": "laurene.wuckert",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "bud.rolfson@gmail.com",
+		"password": "bud.rolfson",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "kory.leuschke@gmail.com",
+		"password": "kory.leuschke",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "jackson.cormier@gmail.com",
+		"password": "jackson.cormier",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "may.mcclure@gmail.com",
+		"password": "may.mcclure",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "eleonora.stiedemann@gmail.com",
+		"password": "eleonora.stiedemann",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "mariette.kris@gmail.com",
+		"password": "mariette.kris",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "douglas.streich@gmail.com",
+		"password": "douglas.streich",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "lakiesha.sawayn@gmail.com",
+		"password": "lakiesha.sawayn",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "kurtis.collier@gmail.com",
+		"password": "kurtis.collier",
+		"interests": ["Economy"],
+		"courses": [] 
+	},
+	{
+		"username": "codi.sipes@gmail.com",
+		"password": "codi.sipes",
+		"interests": ["Redis"],
+		"courses": [] 
+	},
+	{
+		"username": "lue.runolfsdottir@gmail.com",
+		"password": "lue.runolfsdottir",
+		"interests": ["Redis", "Art", "Web"],
+		"courses": [] 
+	},
+	{
+		"username": "isaac.bashirian@gmail.com",
+		"password": "isaac.bashirian",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "elmer.johnson@gmail.com",
+		"password": "elmer.johnson",
+		"interests": ["Art", "Web"],
+		"courses": [] 
+	},
+	{
+		"username": "jimmie.parker@gmail.com",
+		"password": "jimmie.parker",
+		"interests": ["Java", "Economy"],
+		"courses": [] 
+	},
+	{
+		"username": "wilbert.deckow@gmail.com",
+		"password": "wilbert.deckow",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "anisha.tremblay@gmail.com",
+		"password": "anisha.tremblay",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "reanna.sawayn@gmail.com",
+		"password": "reanna.sawayn",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "catrice.swaniawski@gmail.com",
+		"password": "catrice.swaniawski",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "delmar.rempel@gmail.com",
+		"password": "delmar.rempel",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "amos.witting@gmail.com",
+		"password": "amos.witting",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "juan.wilkinson@gmail.com",
+		"password": "juan.wilkinson",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "jamal.bergstrom@gmail.com",
+		"password": "jamal.bergstrom",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "demetrius.conroy@gmail.com",
+		"password": "demetrius.conroy",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "lewis.ankunding@gmail.com",
+		"password": "lewis.ankunding",
+		"interests": ["Java"],
+		"courses": [] 
+	},
+	{
+		"username": "jonathan.rodriguez@gmail.com",
+		"password": "jonathan.rodriguez",
+		"interests": ["Art", "Spring", "Blockchain"],
+		"courses": [] 
+	},
+	{
+		"username": "esperanza.volkman@gmail.com",
+		"password": "esperanza.volkman",
+		"interests": [],
+		"courses": [] 
+	},
+	{
+		"username": "teddy.goodwin@gmail.com",
+		"password": "teddy.goodwin",
+		"interests": ["Art", "Economy"],
+		"courses": [] 
+	},
+	{
+		"username": "donte.skiles@gmail.com",
+		"password": "donte.skiles",
+		"interests": [],
+		"courses": [] 
+	}
+]
