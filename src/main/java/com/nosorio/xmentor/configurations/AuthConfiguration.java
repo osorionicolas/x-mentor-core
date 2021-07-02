@@ -44,28 +44,15 @@ public class AuthConfiguration {
     @PostConstruct
     public void init() {
         log.info("Getting metadata from Keycloak");
-        Mono<String> metadataResponse = webClient.get().uri(this.discoveryEndpoint).retrieve().bodyToMono(String.class);
-        metadataResponse.subscribe(data -> {
-            try {
-                OIDCProviderMetadata metadata = OIDCProviderMetadata.parse(data);
-                this.logoutUrl = metadata.getEndSessionEndpointURI();
-                this.tokenUrl = metadata.getTokenEndpointURI();
-                this.usersUrl = URI.create(adminUrl + "/users");
-            } catch (ParseException e) {
-                throw new RuntimeException("Unable to parse provider metadata: " + this.discoveryEndpoint, e);
-            }
-        });
-        log.info("Getting public key");
-        Mono<String> publicKeyResponse = webClient.get().uri(this.realmUrl).retrieve().bodyToMono(String.class);
-        publicKeyResponse.subscribe(publicKey -> {
-            try {
-                final ObjectNode node = new ObjectMapper().readValue(publicKey, ObjectNode.class);
-                this.publicKey = node.get("public_key").asText();
-            } catch (JsonProcessingException e) {
-                throw new RuntimeException("Unable to parse provider public key: " + this.realmUrl, e);
-            }
-
-        });
+        String metadataResponse = restTemplate.getForObject(this.discoveryEndpoint, String.class);
+        try {
+            OIDCProviderMetadata metadata = OIDCProviderMetadata.parse(metadataResponse);
+            this.logoutUrl = metadata.getEndSessionEndpointURI();
+            this.tokenUrl = metadata.getTokenEndpointURI();
+            this.usersUrl = URI.create(adminUrl + "/users");
+        } catch (ParseException e) {
+            throw new RuntimeException("Unable to parse provider metadata from: " + this.discoveryEndpoint, e);
+        }
     }
 
 }
