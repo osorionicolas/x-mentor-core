@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: x-mentor-ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api
+            backend:
+              serviceName: x-mentor
+              servicePort: 8080

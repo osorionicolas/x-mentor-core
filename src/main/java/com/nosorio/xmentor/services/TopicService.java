@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -13,7 +14,7 @@ public class TopicService {
 
     private final TopicGraphRepository topicGraphRepository;
 
-    public List<Topic> getAll(){
-        return topicGraphRepository.findAll();
+    public List<String> getAll(){
+        return topicGraphRepository.findAll().stream().map(Topic::getName).collect(Collectors.toList());
     }
 }

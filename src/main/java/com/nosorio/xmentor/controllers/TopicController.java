@@ -1,6 +1,5 @@
 package com.nosorio.xmentor.controllers;
 
-import com.nosorio.xmentor.models.Topic;
 import com.nosorio.xmentor.services.TopicService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +14,7 @@ public class TopicController {
     private final TopicService topicService;
 
     @GetMapping("/topics")
-    public List<Topic> getAll(){
+    public List<String> getAll(){
         return topicService.getAll();
     }
 

@@ -1,5 +1,6 @@
 package com.nosorio.xmentor.controllers;
 
+import com.nosorio.xmentor.dtos.CoursePagination;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.services.CourseService;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +20,7 @@ public class CourseController {
     private final CourseService courseService;
 
     @GetMapping({"", "/"})
-    public List<Course> retrieve(@RequestParam (value = "q") String query, @RequestParam int page) {
+    public CoursePagination retrieve(@RequestParam (value = "q") String query, @RequestParam int page) {
         return courseService.getCoursesByQuery(query, page);
     }
 

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: x-mentor
+  template:
+    metadata:
+      labels:
+        app: x-mentor
+    spec:
+      containers:
+        - name: x-mentor
+          image: docker.io/secretcolossus/x-mentor:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "500m"
+            limits:
+              memory: "5120Mi"
+              cpu: "2"
+          ports:
+            - name: web
+              containerPort: 8080

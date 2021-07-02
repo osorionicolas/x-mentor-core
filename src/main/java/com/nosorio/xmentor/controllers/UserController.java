@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/interests")
-    public List<Topic> getInterestsByUser(){
+    public List<String> getInterestsByUser(){
         return userService.getInterests("mamie.toy@gmail.com");
     }
 

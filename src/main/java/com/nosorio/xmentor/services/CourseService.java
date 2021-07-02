@@ -1,19 +1,22 @@
 package com.nosorio.xmentor.services;
 
 import com.nosorio.xmentor.Constants;
+import com.nosorio.xmentor.dtos.CoursePagination;
 import com.nosorio.xmentor.models.Course;
+import com.nosorio.xmentor.models.events.CourseCreated;
 import com.nosorio.xmentor.repositories.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
+import java.time.Instant;
 import java.util.UUID;
 
 @Slf4j
@@ -28,7 +31,7 @@ public class CourseService {
     private String topicExchangeName;
 
     public Course createCourse(Course course){
-        rabbitTemplate.convertAndSend(topicExchangeName, "foo.bar.baz", "Hello from RabbitMQ!");
+        rabbitTemplate.convertAndSend(topicExchangeName, "course.creation", new CourseCreated(course, Instant.now().getEpochSecond()));
         return courseRepository.save(course);
     }
 
@@ -36,13 +39,10 @@ public class CourseService {
         Course course = this.getCourseById(courseId);
     }
 
-    public List<Course> getCoursesByQuery(String query, int page){
+    public CoursePagination getCoursesByQuery(String query, int page){
         Pageable pageable = PageRequest.of(page, Constants.ITEMS_PER_PAGE);
-        return courseRepository.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(query, query, pageable);
-    }
-
-    public void getCoursesByUser(String username, int page){
-
+        Page<Course> coursePage = courseRepository.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(query, query, pageable);
+        return new CoursePagination(coursePage.getContent(), coursePage.getTotalElements());
     }
 
     public Course getCourseById(String courseId){

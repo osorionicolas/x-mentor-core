@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  x-mentor
+  namespace: default
+  labels:
+    app: x-mentor
+spec:
+  selector:
+    app: x-mentor
+  ports:
+    - name: web
+      port: 8080

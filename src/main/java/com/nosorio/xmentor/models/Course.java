@@ -7,13 +7,14 @@ import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Relationship;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.UUID;
 
 @Data
 @Entity
 @Node
 @Table(name = "course")
-public class Course {
+public class Course implements Serializable {
 
     @Id
     @org.springframework.data.neo4j.core.schema.Id

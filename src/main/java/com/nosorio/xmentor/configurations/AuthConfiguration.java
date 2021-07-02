@@ -43,7 +43,7 @@ public class AuthConfiguration {
 
     @PostConstruct
     public void init() {
-        log.info("Getting metadata");
+        log.info("Getting metadata from Keycloak");
         Mono<String> metadataResponse = webClient.get().uri(this.discoveryEndpoint).retrieve().bodyToMono(String.class);
         metadataResponse.subscribe(data -> {
             try {
