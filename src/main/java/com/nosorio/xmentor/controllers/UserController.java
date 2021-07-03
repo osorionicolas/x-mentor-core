@@ -1,8 +1,8 @@
 package com.nosorio.xmentor.controllers;
 
-import com.nosorio.xmentor.Constants;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.services.UserService;
+import com.nosorio.xmentor.utils.AuthUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,16 +21,16 @@ public class UserController {
 
     @GetMapping("/courses")
     public List<Course> getCoursesByUser(@AuthenticationPrincipal Jwt principal, @RequestParam int page){
-        return userService.getCourses(principal.getClaimAsString(Constants.USERNAME_CLAIM), page);
+        return userService.getCourses(AuthUtils.getUsernameFromJwt(principal), page);
     }
 
     @GetMapping("/interests")
-    public List<String> getInterestsByUser(){
-        return userService.getInterests("mamie.toy@gmail.com");
+    public List<String> getInterestsByUser(@AuthenticationPrincipal Jwt principal){
+        return userService.getInterests(AuthUtils.getUsernameFromJwt(principal));
     }
 
     @PostMapping("/interests")
-    public ResponseEntity<Object> registerInterest(){
+    public ResponseEntity<Object> registerInterest(@AuthenticationPrincipal Jwt principal){
         return new ResponseEntity(HttpStatus.OK);
     }
 }
