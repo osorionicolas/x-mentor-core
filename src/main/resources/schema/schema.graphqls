@@ -1,0 +1,28 @@
+type Course {
+	id: ID!
+    title: String!
+    description: String!
+    content: String
+    preview: String!
+    topic: String
+    rating: Int!
+}
+
+input CourseInput {
+	id: ID!
+    title: String!
+    description: String!
+    content: String
+    preview: String!
+    topic: String
+    rating: Int!
+}
+
+type Query {
+	getCourses(query: String, page: Int): [Course]
+	getCourse(id: String):  Course
+}
+
+type Mutation{
+	createCourse(course: CourseInput): Course
+}

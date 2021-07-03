@@ -1,5 +1,8 @@
 package com.nosorio.xmentor.services;
 
+import com.netflix.graphql.dgs.DgsComponent;
+import com.netflix.graphql.dgs.DgsQuery;
+import com.netflix.graphql.dgs.InputArgument;
 import com.nosorio.xmentor.Constants;
 import com.nosorio.xmentor.dtos.CoursePagination;
 import com.nosorio.xmentor.models.Course;
@@ -39,13 +42,15 @@ public class CourseService {
         Course course = this.getCourseById(courseId);
     }
 
+    @DgsQuery
     public CoursePagination getCoursesByQuery(String query, int page){
         Pageable pageable = PageRequest.of(page, Constants.ITEMS_PER_PAGE);
         Page<Course> coursePage = courseRepository.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(query, query, pageable);
         return new CoursePagination(coursePage.getContent(), coursePage.getTotalElements());
     }
 
-    public Course getCourseById(String courseId){
+    @DgsQuery
+    public Course getCourseById(@InputArgument String courseId){
         return courseRepository.findByUuid(UUID.fromString(courseId)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find course"));
     }
 
