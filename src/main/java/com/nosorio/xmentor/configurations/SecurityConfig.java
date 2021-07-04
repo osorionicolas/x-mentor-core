@@ -2,6 +2,7 @@ package com.nosorio.xmentor.configurations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -15,8 +16,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors()
                 .and()
                     .authorizeRequests()
-                        //.antMatchers(HttpMethod.GET, "/topics")
-                        //    .authenticated()
+                        .antMatchers(HttpMethod.GET, "/notifications", "/recommendations", "/assets/upload")
+                            .authenticated()
+                        .antMatchers(HttpMethod.POST, "/courses/{id}/enroll", "/logout", "/courses")
+                            .authenticated()
+                        .antMatchers("/users/**")
+                            .authenticated()
                         .anyRequest()
                             .permitAll()
                 .and()
