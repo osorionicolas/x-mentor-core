@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class DataLoaderManager implements CommandLineRunner {
+public class DataLoadManager implements CommandLineRunner {
 
     private final CourseLoader courseLoader;
     private final TopicLoader topicLoader;
@@ -24,10 +24,9 @@ public class DataLoaderManager implements CommandLineRunner {
             courseLoader.loadCourses();
             topicLoader.loadTopics();
             userLoader.loadUsers();
-
         }
         catch(Exception e){
-            log.error(e.getMessage());
+            log.error("Error executing loaders", e);
         }
     }
 }

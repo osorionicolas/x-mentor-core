@@ -4,11 +4,11 @@ X-Mentor is an e-Learning platform which not only tries to connect students and 
 
 ## Screenshots
 
-![Home Page](https://github.com/serdeliverance/x-mentor/blob/develop/screenshots/HomePage.png?raw=true)
+![Home Page](https://github.com/osorionicolas/x-mentor-core/tree/main/screenshots/HomePage.png?raw=true)
 
-![Course List Page](https://github.com/serdeliverance/x-mentor/blob/develop/screenshots/CourseListPage.png?raw=true)
+![Course List Page](https://github.com/osorionicolas/x-mentor-core/tree/main/screenshots/CourseListPage.png?raw=true)
 
-![Course Page](https://github.com/serdeliverance/x-mentor/blob/develop/screenshots/CoursePage.png?raw=true)
+![Course Page](https://github.com/osorionicolas/x-mentor-core/tree/main/screenshots/CoursePage.png?raw=true)
 
 ## Table of Contents
 

@@ -9,7 +9,9 @@
 				"uuid": "292f76ed-737b-4392-86d7-e5df727c22da",
 				"title": "Java Mastering",
 				"description": "Eiusmod dolore eiusmod ad exercitation irure. Minim veniam id incididunt proident dolor aliquip aute amet duis consequat velit. Exercitation cillum dolore officia velit dolore est reprehenderit non ad. Labore pariatur do consequat dolore occaecat enim occaecat. Consequat dolor nostrud excepteur aute cillum excepteur elit minim laboris et adipisicing ullamco tempor aliquip. Ullamco deserunt nostrud et irure.",
-				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"preview": "https://picsum.photos/300/200?random=1",
 				"topic": "Java",
 				"rating": 5
@@ -19,7 +21,9 @@
 				"uuid": "30e965b0-f34a-42cb-833e-fd43afba598b",
 				"title": "Javascript Mastering",
 				"description": "Occaecat laboris officia occaecat tempor deserunt aliquip cupidatat qui. Fugiat consequat aliqua proident irure. Do aliqua ullamco dolore ad commodo id ut occaecat. Laboris proident velit officia sit ullamco quis cupidatat sit. Consequat deserunt ipsum cupidatat exercitation. Minim exercitation sunt dolore anim non esse labore ut.",
-				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"topic": "Javascript",
 				"preview": "https://picsum.photos/300/200?random=5",
 				"rating": 3
@@ -29,7 +33,9 @@
 				"uuid": "bca0601d-a8da-49a0-bf70-a1efdfd2ee2f",
 				"title": "Javascript For Dummies",
 				"description": "Ut voluptate sint sit occaecat in cillum. Magna ex pariatur labore cillum culpa est do sint irure in dolor elit. Occaecat amet amet commodo adipisicing qui. Reprehenderit sint cillum non anim nisi id pariatur proident anim fugiat occaecat. Nulla dolore ex quis occaecat nostrud qui cillum nisi. Velit cillum excepteur aute culpa consectetur. Tempor et laboris eu commodo sunt ipsum nulla ea pariatur laborum irure sit elit eiusmod.",
-				"content": "https://www.youtube.com/embed/WZIClGn746I",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"preview": "https://picsum.photos/300/200?random=8",
 				"topic": "Javascript",
 				"rating": 3
@@ -46,7 +52,9 @@
 				"uuid": "1674644f-79b4-493f-933d-fad5123363ca",
 				"title": "Java From Zero to Hero",
 				"description": "Veniam nostrud aute proident nostrud exercitation dolor cupidatat qui ullamco cillum exercitation qui quis. Incididunt amet reprehenderit nisi cillum aliquip laborum non. Fugiat veniam eu culpa cupidatat reprehenderit aute ut reprehenderit deserunt. Et nostrud irure cupidatat laboris sint eiusmod. Do adipisicing ea quis aute ut ut aliquip sint sunt fugiat. Minim tempor sit qui proident laborum ea id cillum id commodo duis.",
-				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"topic": "Java",
 				"preview": "https://picsum.photos/300/200?random=2",
 				"rating": 4
@@ -63,7 +71,9 @@
 				"uuid": "df690097-5e0f-4f92-8b50-11223ab215c9",
 				"title": "Java Quickstart",
 				"description": "Elit elit exercitation deserunt eu. Labore laboris incididunt aliquip qui incididunt sint ullamco sunt culpa quis. Ut ad qui veniam enim eu mollit dolore. Elit cillum ullamco incididunt laboris sit consectetur ipsum quis qui commodo. Culpa consequat laborum nulla pariatur nostrud cupidatat ad. Velit sit commodo qui consectetur amet ut. Fugiat elit est dolor voluptate proident et.",
-				"content": "https://www.youtube.com/embed/XsMsQEGLWZA",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"topic": "Java",
 				"preview": "https://picsum.photos/300/200?random=3",
 				"rating": 0
@@ -80,7 +90,9 @@
 				"uuid": "687cd8ea-e750-405e-bc25-66ba774a5ed9",
 				"title": "Java For Dummies",
 				"description": "Culpa proident officia duis veniam proident laboris cupidatat. Elit labore proident qui laboris eu esse pariatur anim Lorem qui cupidatat. Ipsum consectetur culpa nostrud ea incididunt sunt et tempor eiusmod velit irure aliquip culpa. Laboris et id eiusmod nostrud laborum elit consequat elit aute elit laboris. Amet voluptate dolore dolor consequat ex incididunt qui nisi.",
-				"content": "https://www.youtube.com/embed/ivoaMszi2yM",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
 				"topic": "Java",
 				"preview": "https://picsum.photos/300/200?random=4",
 				"rating": 5

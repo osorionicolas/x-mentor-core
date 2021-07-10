@@ -26,7 +26,7 @@ public class CourseLoader {
         ClassPathResource coursesFile = new ClassPathResource("data/courses.json");
 
         if (coursesFile.exists()) {
-            List<Course> elements = new ObjectMapper().readValue(coursesFile.getInputStream(), new TypeReference<List<Course>>(){});
+            List<Course> elements = new ObjectMapper().readValue(coursesFile.getInputStream(), new TypeReference<>() {});
             courseRepository.saveAll(elements);
             courseGraphRepository.saveAll(elements);
         }

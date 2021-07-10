@@ -17,8 +17,8 @@ public class RecommendationController {
     private final RecommendationService recommendationService;
 
     @GetMapping({"", "/"})
-    public RecommendationDTO getRecommendationForUser(@AuthenticationPrincipal Jwt principal){
-        return this.recommendationService.getRecommendation(AuthUtils.getUsernameFromJwt(principal));
+    public RecommendationDTO getRecommendationForUser(@AuthenticationPrincipal Jwt jwt){
+        return this.recommendationService.getRecommendation(AuthUtils.getUsernameFromJwt(jwt));
     }
 
     @GetMapping("/visitors")

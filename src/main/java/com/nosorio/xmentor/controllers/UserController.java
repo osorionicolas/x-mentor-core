@@ -20,17 +20,17 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/courses")
-    public List<Course> getCoursesByUser(@AuthenticationPrincipal Jwt principal, @RequestParam int page){
-        return userService.getCourses(AuthUtils.getUsernameFromJwt(principal), page);
+    public List<Course> getCoursesByUser(@AuthenticationPrincipal Jwt jwt, @RequestParam int page){
+        return userService.getCourses(AuthUtils.getUsernameFromJwt(jwt), page);
     }
 
     @GetMapping("/interests")
-    public List<String> getInterestsByUser(@AuthenticationPrincipal Jwt principal){
-        return userService.getInterests(AuthUtils.getUsernameFromJwt(principal));
+    public List<String> getInterestsByUser(@AuthenticationPrincipal Jwt jwt){
+        return userService.getInterests(AuthUtils.getUsernameFromJwt(jwt));
     }
 
     @PostMapping("/interests")
-    public ResponseEntity<Object> registerInterest(@AuthenticationPrincipal Jwt principal){
+    public ResponseEntity<Object> registerInterest(@AuthenticationPrincipal Jwt jwt){
         return new ResponseEntity(HttpStatus.OK);
     }
 }
