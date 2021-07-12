@@ -1,10 +1,9 @@
 package com.nosorio.xmentor.services;
 
-import com.netflix.graphql.dgs.DgsComponent;
-import com.netflix.graphql.dgs.DgsQuery;
-import com.netflix.graphql.dgs.InputArgument;
 import com.nosorio.xmentor.Constants;
 import com.nosorio.xmentor.dtos.CoursePagination;
+import com.nosorio.xmentor.dtos.RatingDTO;
+import com.nosorio.xmentor.graphrepositories.CourseGraphRepository;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.models.events.CourseCreated;
 import com.nosorio.xmentor.repositories.CourseRepository;
@@ -27,6 +26,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class CourseService {
 
+    private final CourseGraphRepository courseGraphRepository;
     private final CourseRepository courseRepository;
     private final RabbitTemplate rabbitTemplate;
 
@@ -38,24 +38,34 @@ public class CourseService {
         return courseRepository.save(course);
     }
 
-    public void enrollCourse(String courseId, String username) throws InterruptedException {
-        Course course = this.getCourseById(courseId);
+    public void enrollCourse(String courseId, String username) {
+        Course course = this.getCourseById(courseId, username);
     }
 
-    @DgsQuery
     public CoursePagination getCoursesByQuery(String query, int page){
         Pageable pageable = PageRequest.of(page, Constants.ITEMS_PER_PAGE);
         Page<Course> coursePage = courseRepository.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(query, query, pageable);
         return new CoursePagination(coursePage.getContent(), coursePage.getTotalElements());
     }
 
-    @DgsQuery
-    public Course getCourseById(@InputArgument String courseId){
-        return courseRepository.findByUuid(UUID.fromString(courseId)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find course"));
+    public Course getCourseById(String courseId, String username){
+        if(this.doesUserOwnCourse() || this.doesUserStudyCourse(username)) {
+            return courseRepository.findByUuid(UUID.fromString(courseId)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find course"));
+        }
+        else {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, String.format("User %s is not allowed to access the resource", username));
+        }
     }
 
-    public void rateCourse(String courseId){
+    public void rateCourse(RatingDTO rating){
+    }
 
+    private Boolean doesUserOwnCourse(){
+        return false;
+    }
+
+    private Boolean doesUserStudyCourse(String username){
+        return false;
     }
 
 }

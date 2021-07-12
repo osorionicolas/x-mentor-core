@@ -21,12 +21,14 @@ public class UserController {
 
     @GetMapping("/courses")
     public List<Course> getCoursesByUser(@AuthenticationPrincipal Jwt jwt, @RequestParam int page){
-        return userService.getCourses(AuthUtils.getUsernameFromJwt(jwt), page);
+        String username = AuthUtils.getUsernameFromJwt(jwt);
+        return userService.getCourses(username, page);
     }
 
     @GetMapping("/interests")
     public List<String> getInterestsByUser(@AuthenticationPrincipal Jwt jwt){
-        return userService.getInterests(AuthUtils.getUsernameFromJwt(jwt));
+        String username = AuthUtils.getUsernameFromJwt(jwt);
+        return userService.getInterests(username);
     }
 
     @PostMapping("/interests")

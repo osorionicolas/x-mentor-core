@@ -7,8 +7,11 @@ import com.netflix.graphql.dgs.InputArgument;
 import com.nosorio.xmentor.dtos.CoursePagination;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.services.CourseService;
+import com.nosorio.xmentor.utils.AuthUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 
 @Slf4j
 @DgsComponent
@@ -29,8 +32,9 @@ public class CourseDsgComponent {
     }
 
     @DgsQuery
-    public Course getCourse(@InputArgument String courseId){
-        return this.courseService.getCourseById(courseId);
+    public Course getCourse(@InputArgument String courseId, @AuthenticationPrincipal Jwt jwt){
+        String username = AuthUtils.getUsernameFromJwt(jwt);
+        return this.courseService.getCourseById(courseId, username);
     }
 
 
