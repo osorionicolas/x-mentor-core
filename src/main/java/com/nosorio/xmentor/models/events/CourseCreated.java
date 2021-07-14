@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Getter
 @AllArgsConstructor
-public class CourseCreated extends DomainEvent implements Serializable {
+public class CourseCreated implements DomainEvent, Serializable {
     private Course course;
     private Long createdAt;
 }

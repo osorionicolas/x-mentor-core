@@ -1,5 +1,5 @@
 package com.nosorio.xmentor.models.events;
 
-public abstract class DomainEvent {
+public interface DomainEvent {
 }
 
