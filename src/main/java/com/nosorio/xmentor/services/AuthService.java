@@ -28,10 +28,10 @@ public class AuthService {
         log.info("Trying to login with user: {}", user.getUsername());
         TokenRequest request =
                 new TokenRequest(
-                        this.authConfiguration.getTokenUrl(),
-                        new ClientSecretBasic(this.authConfiguration.getClientId(), this.authConfiguration.getClientSecret()),
-                        new ResourceOwnerPasswordCredentialsGrant(user.getUsername(), new Secret(user.getPassword())),
-                        new Scope("openid")
+                    this.authConfiguration.getTokenUrl(),
+                    new ClientSecretBasic(this.authConfiguration.getClientId(), this.authConfiguration.getClientSecret()),
+                    new ResourceOwnerPasswordCredentialsGrant(user.getUsername(), new Secret(user.getPassword())),
+                    new Scope("openid")
                 );
         try {
             TokenResponse tokenResponse = OIDCTokenResponseParser.parse(request.toHTTPRequest().send());
@@ -42,7 +42,7 @@ public class AuthService {
                 throw new ResponseStatusException(HttpStatus.valueOf(errorResponse.toHTTPResponse().getStatusCode()), errorResponse.toHTTPResponse().toString());
             }
             else {
-                log.info("Login succesful for user: {}", user.getUsername());
+                log.info("Login successful for user: {}", user.getUsername());
                 return tokenResponse.toSuccessResponse().getTokens();
             }
         } catch(IOException | ParseException e){

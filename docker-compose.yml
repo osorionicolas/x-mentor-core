@@ -78,3 +78,10 @@ services:
     ports:
       - 8081:15672
       - 5672:5672
+      -
+  x-sonarqube:
+    image: sonarqube
+    restart: always
+    ports:
+      - 9090:9000
+      - 9092:9092

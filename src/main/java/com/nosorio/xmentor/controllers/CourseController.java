@@ -6,14 +6,12 @@ import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.services.CourseService;
 import com.nosorio.xmentor.utils.AuthUtils;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.*;
 
-@Slf4j
 @RestController
 @RequestMapping("/courses")
 @RequiredArgsConstructor
@@ -29,7 +27,7 @@ public class CourseController {
     @GetMapping("/{id}")
     public Course retrieveById(@AuthenticationPrincipal Jwt jwt, @PathVariable (value = "id") String courseId) {
         String username = AuthUtils.getUsernameFromJwt(jwt);
-        return courseService.getCourseById(courseId, username);
+        return courseService.getCourseById(username, courseId);
     }
 
     @PostMapping({"", "/"})

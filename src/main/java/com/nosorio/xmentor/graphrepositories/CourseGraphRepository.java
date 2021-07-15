@@ -2,7 +2,6 @@ package com.nosorio.xmentor.graphrepositories;
 
 import com.nosorio.xmentor.dtos.RatingDTO;
 import com.nosorio.xmentor.models.Course;
-import lombok.val;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.stereotype.Repository;
@@ -23,6 +22,12 @@ public interface CourseGraphRepository extends Neo4jRepository<Course, Long> {
 
     /*@Query("MATCH (u:User)-[r:RATED]->(c:Course) WHERE u.username = $username RETURN c")
     List<Course> findByRated(String username, int skip, int limit);*/
+
+    @Query("MATCH (u:User)-[r:STUDYING]->(c:Course) WHERE u.username = $username AND c.uuid = $courseId RETURN COUNT(r) > 0")
+    Boolean doesUserOwnCourse(String username, String courseId);
+
+    @Query("MATCH (u:User)-[r:STUDYING]->(c:Course) WHERE u.username = $username AND c.uuid = $courseId RETURN COUNT(r) > 0")
+    Boolean isUserStudyingCourse(String username, String courseId);
 
     @Query("MATCH (u:User), (t:Topic) WHERE u.username = $username AND t.name = $topic CREATE (u)-[r:INTERESTED]->(t)")
     void createInterestRelationQuery(String username, String topic);

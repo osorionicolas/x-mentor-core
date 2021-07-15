@@ -4,7 +4,6 @@ import com.nosorio.xmentor.dtos.CoursePagination;
 import com.nosorio.xmentor.models.Course;
 import com.nosorio.xmentor.repositories.CourseRepository;
 import com.nosorio.xmentor.services.CourseService;
-import lombok.extern.slf4j.Slf4j;
 import org.jeasy.random.EasyRandom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -22,14 +21,14 @@ import java.util.stream.Collectors;
 
 import static org.mockito.Mockito.*;
 
-@Slf4j
 @ExtendWith(MockitoExtension.class)
 class CourseServiceTest {
 
     @InjectMocks
     private CourseService courseService;
 
-    @Mock CourseRepository courseRepositoryMock;
+    @Mock
+    CourseRepository courseRepositoryMock;
 
     @Test
     void whenQueryAndPageAreProvided_thenRetrieveCourses(){
@@ -47,14 +46,17 @@ class CourseServiceTest {
         // When
         when(
             courseRepositoryMock.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(
-                    any(String.class), any(String.class), any(Pageable.class)
+                any(String.class), any(String.class), any(Pageable.class)
             )
         ).thenReturn(coursesPage);
 
         CoursePagination courses = courseService.getCoursesByQuery(query, page);
 
         // Then
+
+        verify(courseRepositoryMock).findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(any(String.class), any(String.class), any(Pageable.class));
         Assertions.assertEquals(courses.getTotal(), totalCourses);
         Assertions.assertEquals(courses.getCourses().size(), courseListSize);
     }
+
 }

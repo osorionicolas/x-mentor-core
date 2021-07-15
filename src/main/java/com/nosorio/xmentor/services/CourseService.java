@@ -48,24 +48,27 @@ public class CourseService {
         return new CoursePagination(coursePage.getContent(), coursePage.getTotalElements());
     }
 
-    public Course getCourseById(String courseId, String username){
-        if(this.doesUserOwnCourse() || this.doesUserStudyCourse(username)) {
-            return courseRepository.findByUuid(UUID.fromString(courseId)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find course"));
+    public Course getCourseById(String username, String courseId){
+        Boolean userStudying = this.doesUserStudyCourse(username, courseId);
+        log.info(String.valueOf(userStudying));
+        if(this.doesUserStudyCourse(username, courseId)) {
+            return courseRepository.findByUuid(UUID.fromString(courseId))
+                                   .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Unable to find course"));
         }
         else {
-            throw new ResponseStatusException(HttpStatus.FORBIDDEN, String.format("User %s is not allowed to access the resource", username));
+            throw new ResponseStatusException(HttpStatus.FOUND);
         }
     }
 
     public void rateCourse(RatingDTO rating){
     }
 
-    private Boolean doesUserOwnCourse(){
-        return false;
+    private Boolean doesUserOwnCourse(String username, String courseId){
+        return courseGraphRepository.doesUserOwnCourse(username, courseId);
     }
 
-    private Boolean doesUserStudyCourse(String username){
-        return false;
+    private Boolean doesUserStudyCourse(String username, String courseId){
+        return courseGraphRepository.isUserStudyingCourse(username, courseId);
     }
 
 }

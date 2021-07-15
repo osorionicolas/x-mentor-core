@@ -229,7 +229,44 @@
 		"username": "codi.sipes@gmail.com",
 		"password": "codi.sipes",
 		"interests": ["Redis"],
-		"courses": [] 
+		"courses": [
+			{
+				"id": 1,
+				"uuid": "292f76ed-737b-4392-86d7-e5df727c22da",
+				"title": "Java Mastering",
+				"description": "Eiusmod dolore eiusmod ad exercitation irure. Minim veniam id incididunt proident dolor aliquip aute amet duis consequat velit. Exercitation cillum dolore officia velit dolore est reprehenderit non ad. Labore pariatur do consequat dolore occaecat enim occaecat. Consequat dolor nostrud excepteur aute cillum excepteur elit minim laboris et adipisicing ullamco tempor aliquip. Ullamco deserunt nostrud et irure.",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
+				"preview": "https://picsum.photos/300/200?random=1",
+				"topic": "Java",
+				"rating": 5
+			},
+			{
+				"id": 5,
+				"uuid": "30e965b0-f34a-42cb-833e-fd43afba598b",
+				"title": "Javascript Mastering",
+				"description": "Occaecat laboris officia occaecat tempor deserunt aliquip cupidatat qui. Fugiat consequat aliqua proident irure. Do aliqua ullamco dolore ad commodo id ut occaecat. Laboris proident velit officia sit ullamco quis cupidatat sit. Consequat deserunt ipsum cupidatat exercitation. Minim exercitation sunt dolore anim non esse labore ut.",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
+				"topic": "Javascript",
+				"preview": "https://picsum.photos/300/200?random=5",
+				"rating": 3
+			},
+			{
+				"id": 8,
+				"uuid": "bca0601d-a8da-49a0-bf70-a1efdfd2ee2f",
+				"title": "Javascript For Dummies",
+				"description": "Ut voluptate sint sit occaecat in cillum. Magna ex pariatur labore cillum culpa est do sint irure in dolor elit. Occaecat amet amet commodo adipisicing qui. Reprehenderit sint cillum non anim nisi id pariatur proident anim fugiat occaecat. Nulla dolore ex quis occaecat nostrud qui cillum nisi. Velit cillum excepteur aute culpa consectetur. Tempor et laboris eu commodo sunt ipsum nulla ea pariatur laborum irure sit elit eiusmod.",
+				"content": {
+					"url": "https://www.youtube.com/embed/ivoaMszi2yM"
+				},
+				"preview": "https://picsum.photos/300/200?random=8",
+				"topic": "Javascript",
+				"rating": 3
+			}
+		]
 	},
 	{
 		"username": "lue.runolfsdottir@gmail.com",
